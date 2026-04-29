@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak Kami</title>
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
 <body>
+    <div class="container">
+        
+        <header class="site-header">
+            <h1>Hubungi Kami</h1>
+            <p>Silakan isi formulir di bawah ini atau hubungi kami melalui informasi kontak yang tersedia.</p>
+        </header>
 
-    <header>
-        <h1>Hubungi Kami</h1>
-        <p>Silakan isi formulir di bawah ini atau hubungi kami melalui informasi kontak yang tersedia.</p>
-        <hr>
-    </header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Contact.html" class="active ">Contact</a></li>
+                <li><a href="mahasiswa.html">Data Mahasiswa</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <h3>Menu Navigasi:</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <hr>
-    </nav>
+        <main class="site-content">
+            <div class="contact-wrapper">
+                
+                <section class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <ul class="info-list">
+                        <li><strong>Alamat:</strong><br> Jl. Kedungmundu Raya No. 18 Semarang</li>
+                        <li><strong>Email:</strong><br> info@unimus.ac.id</li>
+                        <li><strong>Telepon:</strong><br> (024) 7674029, 76740297, 76740293</li>
+                    </ul>
+                </section>
 
-    <main>
-        <h2>Informasi Kontak</h2>
-        <ul>
-            <li><strong>Alamat:</strong> Jl. Contoh Alamat No. 123, Semarang, Jawa Tengah</li>
-            <li><strong>Email:</strong> halo@websitesaya.com</li>
-            <li><strong>Telepon:</strong> 0812-3456-7890</li>
-        </ul>
+                <section class="contact-form">
+                    <h2>Kirim Pesan</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap:</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Alamat Email:</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">Pesan Anda:</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Kirim Pesan</button>
+                            <button type="reset" class="btn-reset">Hapus Isian</button>
+                        </div>
+                    </form>
+                </section>
 
-        <h2>Kirim Pesan</h2>
-        <form action="#" method="POST">
-            <p>
-                <label for="nama">Nama Lengkap:</label><br>
-                <input type="text" id="nama" name="nama" required>
-            </p>
-            <p>
-                <label for="email">Alamat Email:</label><br>
-                <input type="email" id="email" name="email" required>
-            </p>
-            <p>
-                <label for="pesan">Pesan Anda:</label><br>
-                <textarea id="pesan" name="pesan" rows="5" cols="40" required></textarea>
-            </p>
-            <p>
-                <button type="submit">Kirim Pesan</button>
-                <button type="reset">Hapus Isian</button>
-            </p>
-        </form>
-        <hr>
-    </main>
+            </div>
+        </main>
 
-    <footer>
-        <p>&copy; 2026 Website Saya.</p>
-    </footer>
+        <footer class="site-footer">
+            <p>&copy; 2026 Website Saya.</p>
+        </footer>
 
+    </div>
 </body>
 </html>

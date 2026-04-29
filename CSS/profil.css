@@ -1,0 +1,192 @@
+/* =========================================
+   1. PENGATURAN DASAR & LAYOUT UTAMA
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. HEADER & FOOTER
+========================================= */
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.site-header h1 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    margin-top: auto;
+}
+
+/* =========================================
+   3. MENU NAVIGASI (Biru)
+========================================= */
+.site-nav {
+    background-color: #0056b3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.site-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.site-nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.site-nav a:hover, .site-nav a.active {
+    background-color: #004494;
+    color: #ffc107;
+}
+
+/* =========================================
+   6. HALAMAN PROFIL KREATOR
+========================================= */
+.profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #0056b3;
+    gap: 30px;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+/* --- Bagian Kiri: Foto --- */
+.profile-image-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 5px solid #e9ecef;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); 
+}
+
+/* --- Bagian Kanan: Teks & Informasi --- */
+.profile-info-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+.profile-info-section h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.profile-role {
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 2px dashed #e9ecef;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.profile-bio p {
+    color: #495057;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* --- Tombol Sosial Media (Instagram) --- */
+.social-links {
+    margin-top: 25px;
+}
+
+.btn-instagram {
+    display: inline-block;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-instagram:hover {
+    box-shadow: 0 6px 12px rgba(220, 39, 67, 0.4);
+    transform: translateY(-3px); 
+    color: #fff;
+}
+
+/* --- Responsif untuk Layar HP --- */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .profile-bio p {
+        text-align: center;
+    }
+    
+    .profile-role {
+        border-bottom: none;
+    }
+}

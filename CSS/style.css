@@ -1,0 +1,165 @@
+/* =========================================
+   1. PENGATURAN DASAR & LAYOUT UTAMA
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. HEADER & FOOTER
+========================================= */
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.site-header h1 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    margin-top: auto;
+}
+
+/* =========================================
+   3. MENU NAVIGASI (Sama seperti Contact)
+========================================= */
+.site-nav {
+    background-color: #0056b3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.site-nav li {
+    flex: 1;
+    text-align: center;
+}
+
+.site-nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.site-nav a:hover, .site-nav a.active {
+    background-color: #004494;
+    color: #ffc107; /* Aksen menu kuning */
+}
+
+/* =========================================
+   4. KONTEN HALAMAN HOME (BERANDA)
+========================================= */
+.home-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #0056b3; /* Garis biru di atas kartu */
+    margin-bottom: 20px;
+    text-align: center; /* Memusatkan isi konten beranda */
+}
+
+.home-card h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Gambar Kampus */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+}
+
+/* Kotak Informasi Kelas/Alamat */
+.info-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745; /* Aksen hijau */
+    text-align: left;
+    margin: 0 auto 30px auto;
+    display: block;
+    max-width: 400px; /* Agar kotaknya rapi di tengah */
+}
+
+.info-section p {
+    color: #495057;
+    line-height: 1.8;
+}
+
+.home-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Daftar Program Studi bergaya Badge/Pil */
+.prodi-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.prodi-list li {
+    background-color: #e9ecef;
+    color: #0056b3;
+    padding: 10px 25px;
+    border-radius: 50px; /* Membuat bentuknya bulat seperti pil */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.prodi-list li:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    border-color: #0056b3;
+    transform: translateY(-3px); /* Efek mengambang saat disentuh kursor */
+}

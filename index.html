@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahlil Saja</title>
+    <title>Portal Zulfa - Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <h1>Profil</h1>
-    <table border="black"> 
-        <tr>
-            <td>
-                <a href="index.html">Home</a> 
-            </td>
-            <td>
-               <a href="Profile.html">Profile</a> 
-            </td>
-            <td>
-                <a href="Contact.html">Contact</a>
-            </td>
-            <td>
-                <a href="mahasiswa.html">Data Mahasiwa</a>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h2>BUNG BAHLIL</h2>
-    <img src="Images/BAHLIL.jpg" alt="DPR RI" height="200px"/>
-    <p>
-        <b>Nama : Bahlil, MM <br>
-        Pekerjaan : DPR </b> <br>
-        Jabatan : <br>jkjaskjsj sjnkjskwdj kalkdjaskjdk 
-        djjs jadskajs jkfrk wyuhakjs jsdkjasddkl
-         kjd kajds kjadj 
-    </p>
-    <h3>Daftar Progam</h3>
-    <ul>
-        <li>Season MBG</li>
-        <li>Pertamina Yuhu</li>
-        <li>Sawit Tradisional</li>
-    </ul>
+    <div class="container">
+        
+        <header class="site-header">
+            <h1>Profil Portal Unimus</h1>
+            <p>Selamat Datang di Halaman Beranda Utama</p>
+        </header>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="mahasiswa.html">Data Mahasiswa</a></li>
+            </ul>
+        </nav>
+
+        <main class="site-content">
+            <div class="home-card">
+                <h2>Universitas Muhammadiyah Semarang</h2>
+                
+                <img src="Images/Unimus.jpg" alt="Kampus Aing" class="hero-image"/>
+                
+                <div class="info-section">
+                    <p>
+                        <strong>Nama Kampus :</strong> Universitas Muhammadiyah Semarang <br>
+                        <strong>Alamat :</strong> Jl. Kedungmundu Raya No. 18 Semarang <br>
+                        <strong>Akreditasi :</strong> UNGGUL 
+                    </p>
+                </div>
+
+                <h3>Daftar Program Studi Fakultas Ilmu Komputer</h3>
+                <ul class="prodi-list">
+                    <li>Informatika</li>
+                    <li>Teknologi Informasi</li>
+                    <li>Sains Data</li>
+                    <li>Cyber Security</li>
+                    <li>DKV</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Portal Unimus.</p>
+        </footer>
+
+    </div>
 </body>
 </html>

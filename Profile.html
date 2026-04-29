@@ -3,34 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama Saya</title>
+    <title>Profil Kreator - Jurnal Informatika</title>
+    <link rel="stylesheet" href="CSS/profil.css">
 </head>
 <body>
+    <div class="container">
+        
+        <header class="site-header">
+            <h1>Tentang Pembuat</h1>
+            <p>Berkenalan lebih dekat dengan sosok di balik website ini.</p>
+        </header>
 
-    <header>
-        <h1>Selamat Datang di Website Saya</h1>
-        <p>Ini adalah contoh halaman beranda sederhana murni HTML.</p>
-        <hr> </header>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html" class="active">Profile</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="mahasiswa.html">Data Mahasiswa</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <h3>Menu Navigasi:</h3>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-           
-        </ul>
-        <hr>
-    </nav>
+        <main class="site-content">
+            <div class="profile-card">
+                
+                <div class="profile-image-section">
+                    <img src="Images/GSA.jpeg" alt="Foto Profil Zulfa Sowam" class="profile-img">
+                </div>
+                
+                <div class="profile-info-section">
+                    <h2>Zulfa Sowam</h2>
+                    <h4 class="profile-role">Mahasiswa Teknik Informatika - UNIMUS '24</h4>
+                    
+                    <div class="profile-bio">
+                        <p>Halo semuanya! Kenalin, aku Zulfa Sowam, mahasiswa Informatika Universitas Muhammadiyah Semarang (UNIMUS) angkatan 2024. Website ini sebenarnya berawal dari ruang personal buat ngulik-ngulik kode dan belajar hal baru. Tapi, aku harap tulisan dan <em>project</em> sederhana yang aku bagikan di sini juga bisa jadi referensi dan ngebantu teman-teman semua, ya!</p>
+                        
+                        <p>Buat kalian yang juga lagi sama-sama berjuang—entah itu belajar ngoding, ngerjain tugas, atau ngejar mimpi—tetap semangat! Proses belajar emang kadang banyak <em>error</em>-nya, tapi justru di situlah kita bertumbuh. <em>Keep learning and let's grow together!</em></p>
+                    </div>
 
-    <main>
-        <h2>Artikel Terbaru</h2>
-        <p>Halo! Ini adalah konten utama dari halaman website. Kamu bisa mengisi bagian ini dengan teks, gambar, atau informasi penting lainnya.</p>
-        <p>Karena tidak ada CSS, semua teks akan tampil dengan gaya standar (hitam putih) dan rata kiri secara default.</p>
-        <hr>
-    </main>
+                    <div class="social-links">
+                        <a href="https://instagram.com/zlfaswm" target="_blank" class="btn-instagram">
+                            Mari Berteman di Instagram
+                        </a>
+                    </div>
+                </div>
 
-    <footer>
-        <p>&copy; 2026 Website Saya.</p>
-    </footer>
+            </div>
+        </main>
 
+        <footer class="site-footer">
+            <p>&copy; 2026 Portal Unimus.</p>
+        </footer>
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,154 @@
+/* --- Pengaturan Dasar --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 40px 0;
+}
+
+/* --- Tabel Navigasi --- */
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0056b3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.nav-table td {
+    text-align: center;
+}
+
+.nav-table a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-table a:hover, .nav-table a.active {
+    background-color: #004085;
+    color: #ffc107;
+}
+
+/* --- Bagian Aksi & Tombol --- */
+.action-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.action-section h2 {
+    margin-bottom: 0; /* Menghilangkan margin bawah agar sejajar dengan tombol */
+}
+
+.btn-primary {
+    background-color: #28a745; /* Warna hijau untuk aksi "Input" */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+/* --- Tabel Data Mahasiswa --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+}
+
+.data-table th {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Efek belang-belang (Zebra striping) */
+}
+
+.data-table tbody tr:hover {
+    background-color: #e2e6ea; /* Efek sorot saat kursor di atas baris */
+}
+
+.student-photo {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* --- Tabel Grid (Latihan Layout) --- */
+.grid-table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.grid-table td {
+    border: 2px solid #adb5bd;
+    padding: 15px;
+    font-weight: bold;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+.grid-table .highlight-cell {
+    background-color: #ffc107; /* Warna kuning untuk sel tanda tanya */
+    color: #212529;
+    font-size: 28px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}

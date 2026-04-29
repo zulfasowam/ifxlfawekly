@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data</title>
+    <title>Tambah Data Mahasiswa</title>
+    <link rel="stylesheet" href="CSS/inputdata.css">
 </head>
-<body>
-    <h2>Tambah Data Mahasiwa</h2>
-    <form>
-        <table>
-            <tr>
-                <td> <label for="nama">Nama:</label></td>
-                <td><input type="text" name="nama" id="nama"/></td>
-            </tr>
-            <tr>
-                <td><label for="nim">NIM</label></td>
-                <td>:</td>
-                <td><input type="file"/>Foto</td>
-            </tr>
-        </table>
-        <label for="nama">Nama:</label>
-        <input type="text" name="nama" id="nama"/>
-    </form>
+<body class="page-input-data">
+
+    <div class="centered-container">
+        
+        <div class="top-nav-center">
+            <a href="index.html" class="btn-home">🏠 Kembali ke Home</a>
+        </div>
+
+        <div class="input-data-card">
+            <div class="card-header">
+                <h2>Formulir Input Data</h2>
+                <p>Masukkan informasi mahasiswa baru ke dalam sistem.</p>
+            </div>
+            
+            <form action="mahasiswa.html" method="POST">
+                
+                <div class="form-group-input">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama mahasiswa" required>
+                </div>
+                
+                <div class="form-group-input">
+                    <label for="nim">NIM (Nomor Induk Mahasiswa):</label>
+                    <input type="text" id="nim" name="nim" placeholder="Contoh: G.211.23.0001" required>
+                </div>
+
+                <div class="form-group-input">
+                    <label for="foto">Unggah Pas Foto:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" class="file-input" required>
+                </div>
+                
+                <div class="form-actions-input">
+                    <button type="submit" class="btn-submit">Simpan Data</button>
+                    <a href="mahasiswa.html" class="btn-reset">Batal</a>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
 </body>
 </html>
