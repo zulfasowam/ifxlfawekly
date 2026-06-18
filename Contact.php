@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $pesan = htmlspecialchars($_POST['pesan']);
 
-    $pesanSukses = "Terima kasih $nama, pesan Anda telah diterima.";
+    $pesanSukses = "Terima kasih kak $nama, pesan Anda telah diterima.";
 }
 ?>
 
@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             type="text"
                             id="nama"
                             name="nama"
-                            placeholder="Masukkan nama lengkap Anda"
+                            placeholder="Masukkan nama lengkap Panjenengan"
                             required>
                     </div>
 
