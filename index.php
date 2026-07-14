@@ -4,12 +4,13 @@ $namaKampus = "Universitas Muhammadiyah Semarang";
 $alamat = "Jl. Kedungmundu Raya No. 18 Semarang";
 $akreditasi = "UNGGUL";
 
+// Mengubah array menjadi Associative Array (Nama Prodi => Link URL)
 $prodi = [
-    "Informatika",
-    "Teknologi Informasi",
-    "Sains Data",
-    "Cyber Security",
-    "DKV"
+    "Informatika" => "https://informatika.unimus.ac.id/", // Contoh link resmi
+    "Teknologi Informasi" => "https://ti.unimus.ac.id/",
+    "Sains Data" => "https://sainsdata.unimus.ac.id/home-2/",
+    "Cyber Security" => "https://rks.unimus.ac.id/",
+    "DKV" => "https://dkv.unimus.ac.id/"
 ];
 ?>
 
@@ -36,6 +37,8 @@ $prodi = [
             <li><a href="Profile.php">Profile</a></li>
             <li><a href="Contact.php">Contact</a></li>
             <li><a href="mahasiswa.php">Data Mahasiswa</a></li>
+            <!--  Tambahan Menu Register//  -->
+            <li><a href="register.php" style="background-color: #28a745; color: white;">Register</a></li>
         </ul>
     </nav>
 
